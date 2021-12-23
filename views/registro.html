@@ -64,22 +64,23 @@
             <form action="/" method="post">
                 <h3>Registrate!</h3>
                 <label for="nombre"></label>
-                <input class="box-shadow" type="text" id="nombre" name="nombre" placeholder="Nombre y apellido">
+                <input class="box-shadow" type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
                 <label for="nombreusuario"></label>
-                <input class="box-shadow" type="text" id="nombreusuario" name="nombreusuario" placeholder="nombre de usuario">
+                <input class="box-shadow" type="text" id="nombreusuario" name="nombreusuario" placeholder="nombre de usuario" required>
                 <label for="email"></label>        
-                <input class="box-shadow" type="email" id="email" name="email" placeholder="email" >
-                <label for="password"></label>
-                <input class="box-shadow" type="password" id="password" name="password" placeholder="contraseña">
+                <input class="box-shadow" type="email" id="email" name="email" placeholder="email" required >
+                <!-- se me pasó <label for="password"></label>
+                <input class="box-shadow" type="password" id="password" name="password" placeholder="contraseña" required >
+                -->
                 <h4>fecha de nacimiento</h4>
-                <input class="box-shadow" type="date" name="mes" id="mes">
-                <input class="box-shadow" type="text" name="" id="date" placeholder="Domicilio">
+                <input class="box-shadow" type="date" name="mes" id="mes" required>
+                <input class="box-shadow" type="text" name="" id="date" placeholder="Domicilio" required>
                 <h4>perfil de usuario</h4>                
                     <label for="perfil_u"> 
                         <div class="userType">                   
-                            <input class="espacio" type="radio" name="perfil_u" id="perfil_u">
+                            <input class="espacio" type="radio" name="perfil_u" id="perfil_u"required>
                             <label for="">Comprador</label>
-                            <input class="espacio" type="radio" name="perfil_u" id="perfil_u">
+                            <input class="espacio" type="radio" name="perfil_u" id="perfil_u"required>
                             <label for="">Vendedor</label>  
                         </div>                  
                     </label>
@@ -100,9 +101,9 @@
 
 
                 <label for="password"></label>
-                <input class="box-shadow" type="password" id="password" name="password" placeholder="elegí tu contraseña">
+                <input class="box-shadow" type="password" id="password" name="password" placeholder="elegí tu contraseña"required>
                 <label for="password"></label>
-                <input class="box-shadow" type="password" id="password" name="password" placeholder="repite tu contraseña">
+                <input class="box-shadow" type="password" id="password" name="password" placeholder="repite tu contraseña"required>
                 <div class="group-buttons">
                     <button class="buttons" type="reset" >borrar</button>
                     <button class="buttons" type="submit">enviar</button>
